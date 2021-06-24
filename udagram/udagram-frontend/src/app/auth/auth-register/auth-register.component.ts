@@ -44,7 +44,6 @@ export class AuthRegisterComponent implements OnInit {
       email: this.registerForm.controls.email.value,
       name: this.registerForm.controls.name.value
     };
-
     this.auth.register(newuser, this.registerForm.controls.password.value)
               .then((user) => {
                 this.modal.dismiss();
